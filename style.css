@@ -1,0 +1,63 @@
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    background-color: #f0f0f0; /* Izmainīts fona krāsu */
+    width: 100%; /* Izmainīts izmērs, lai aizņemtu pilnu ekrānu */
+    padding: 20px;
+    overflow: auto; /* Pievienota overflow īpašība, lai novērstu ķermeņa elementu pārklāšanos */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Izmainīts, lai novērstu marģinu no saraksta */
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: lightgrey;
+    border-top: 8px solid grey;
+    border-bottom: 2px solid grey;
+    padding: 10px 0;
+}
+
+/* Media queries for responsiveness */
+@media screen and (min-width: 768px) {
+    nav {
+        width: 200px;
+        float: left;
+        height: 100%;
+    }
+
+    main {
+        margin-left: 220px;
+    }
+}
